@@ -1,4 +1,3 @@
-import { HomeAssistant } from 'custom-card-helpers';
 import {
   add,
   differenceInSeconds,
@@ -372,7 +371,7 @@ class TimelineDataManager {
    */
   protected async _fetchEvents(
     element: HTMLElement,
-    hass: HomeAssistant,
+    hass: ExtendedHomeAssistant,
     cameras: Map<string, CameraConfig>,
     media: TimelineMediaType,
     start: Date,
